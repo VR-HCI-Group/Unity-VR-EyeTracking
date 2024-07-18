@@ -1,9 +1,10 @@
 # 说明
 ## 前期准备
 1. SRanipaRuntime SDK（VIVE Eye and Facial Tracking SDK）：
+   
 下载地址：https://developer-express.vive.com/resources/vive-sense/eye-and-facial-tracking-sdk/download/latest/
 
-2. SR_runtime软件：
+3. SR_runtime软件：
 steam搜索 VIVE Console for SteamVR
 下载后在该软件安装目录下 \common\VIVEDriver\App\SRanipal 位置
 <img src="images/1.png" width="50%" />
