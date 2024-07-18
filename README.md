@@ -15,7 +15,7 @@ steam搜索 VIVE Console for SteamVR
 
 2. Asset目录下多出一个ViveSR文件夹，要在自己的场景中使用，需要将该文件夹下的SRanipal Eye Framework预制体加入到场景中。
 <img src="images/屏幕截图 2024-07-18 115044.png" width="50%" />
-<img src="images/屏幕截图 2024-07-18 115708.png" width="50%" />
-<img src="images/屏幕截图 2024-07-18 115729.png" width="50%" />
+<img src="images/屏幕截图 2024-07-18 115708.png" width="20%" />
+<img src="images/屏幕截图 2024-07-18 115729.png" width="20%" />
 
 3. 将EyeDataCollect.cs文件挂载在vr相机上
