@@ -5,3 +5,4 @@
 2. SR_runtime软件：
 steam搜索 VIVE Console for SteamVR
 下载后在该软件安装目录下 \common\VIVEDriver\App\SRanipal 位置
+![本地路径](images\屏幕截图 2024-07-18 114148.png "相对路径演示,上一级目录")
