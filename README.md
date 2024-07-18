@@ -15,12 +15,13 @@
 1. Unity 中导入 SDK：
    
    在 Unity 项目中 import 下图的 package 文件
+   
    <img src="images/2.png" width="50%" />
 
-2. `Asset` 目录下多出一个 `ViveSR` 文件夹，要在自己的场景中使用，需要将该文件夹下的 SRanipal Eye Framework 预制体加入到场景中。
+3. `Asset` 目录下多出一个 `ViveSR` 文件夹，要在自己的场景中使用，需要将该文件夹下的 SRanipal Eye Framework 预制体加入到场景中。
    
    <img src="images/3.png" width="50%" />
    <img src="images/4.png" width="20%" />
    <img src="images/5.png" width="30%" />
 
-3. 将 `EyeDataCollect.cs` 文件挂载在 vr 相机上
+4. 将 `EyeDataCollect.cs` 文件挂载在 vr 相机上
