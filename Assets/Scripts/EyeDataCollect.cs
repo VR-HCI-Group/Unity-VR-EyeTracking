@@ -4,12 +4,13 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.Assertions;
 using System;
+using System.IO;
 using ViveSR.anipal.Eye;
 public class EyeDataCollect : MonoBehaviour
 {
     public Camera cam;//vr相机
     public int LengthOfRay = 25;
-    [SerializeField] private LineRenderer GazeRayRenderer;
+    // [SerializeField] private LineRenderer GazeRayRenderer;
     private static EyeData_v2 eyeData = new EyeData_v2();
     private bool eye_callback_registered = false;
     //此处为增加的变量，定义好需要采集的数据，后续如果需要可以继续添加
@@ -24,12 +25,17 @@ public class EyeDataCollect : MonoBehaviour
     Vector3 normalizedGazeDirection = new Vector3(0.0f, 0.0f, 1.0f);
     // Start is called before the first frame update
     //保存数据
+    private string EyeDataFolder="./GazeRecordings/" ;
     public string filename;
     string separator = "\t";
     void Start()
     {
         string datetimeString = System.DateTime.Now.ToString("yy-MM-dd-HH-mm-ss");
-        filename = "./GazeRecordings/" + "GazeData" + datetimeString+".txt";//这里是把数据存在该目录下的txt文件中
+        if (!Directory.Exists(EyeDataFolder))
+        {
+            Directory.CreateDirectory(EyeDataFolder);
+        }
+        filename = EyeDataFolder + "GazeData" + datetimeString+".txt";//这里是把数据存在该目录下的txt文件中
         string titlehead = "time" + separator + "GazeDirectionx" + separator + "GazeDirectiony" + separator + "GazePositionx" + separator + "GazePositiony" +
                            separator + "leftOpenness" + separator + "rightOpenness" + separator + "pupilDiameterLeft" +separator + "pupilDiameterRight" 
                            +separator + "pupilPositionLeft" +separator + "pupilPositionRight" +"\n";
@@ -39,7 +45,7 @@ public class EyeDataCollect : MonoBehaviour
             enabled = false;
             return;
         }
-        Assert.IsNotNull(GazeRayRenderer);
+        // Assert.IsNotNull(GazeRayRenderer);
     }
 
     // Update is called once per frame
@@ -79,8 +85,8 @@ public class EyeDataCollect : MonoBehaviour
         }
         
         Vector3 GazeDirectionCombined = cam.transform.TransformDirection(GazeDirectionCombinedLocal);
-        GazeRayRenderer.SetPosition(0, Camera.main.transform.position - Camera.main.transform.up * 0.05f);
-        GazeRayRenderer.SetPosition(1, Camera.main.transform.position + GazeDirectionCombined * LengthOfRay);
+        // GazeRayRenderer.SetPosition(0, Camera.main.transform.position - Camera.main.transform.up * 0.05f);
+        // GazeRayRenderer.SetPosition(1, Camera.main.transform.position + GazeDirectionCombined * LengthOfRay);
         //pupil
         //pupil diameter 瞳孔的直径
         pupilDiameterLeft = eyeData.verbose_data.left.pupil_diameter_mm;
