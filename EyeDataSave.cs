@@ -21,7 +21,6 @@ public class EyeDataSave : MonoBehaviour
     private Vector3 iniPos;
     private Vector3 iniVel;
     private Vector3 nowPos;
-
     private Vector3 nowVel;
 
     //private float nowSpeed;
