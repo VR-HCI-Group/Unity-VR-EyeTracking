@@ -22,4 +22,4 @@
    
    <img src="images/3.png" width="40%" /><img src="images/4.png" width="15%" /><img src="images/5.png" width="30%" />
 
-4. 将 `EyeDataCollect.cs` 文件挂载在 vr 相机上
+4. 将 `EyeDataCollect.cs` 文件挂载在 vr 相机上，如果需要获取碰撞体位置，可以参考Assets/Scripts/EyeDataSave.cs文件。
