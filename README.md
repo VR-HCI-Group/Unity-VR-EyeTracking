@@ -18,7 +18,7 @@
    
    <img src="images/2.png" width="50%" />
 
-3. `Asset` 目录下多出一个 `ViveSR` 文件夹，要在自己的场景中使用，需要将该文件夹下的 SRanipal Eye Framework 预制体加入到场景中。
+3. `Asset` 目录下多出一个 `ViveSR` 文件夹，要在自己的场景中使用，需要将该文件夹下的 SRanipal Eye Framework 预制体加入到场景中，注意第三张图中的“Enable Eye Version”的值改为 Version 2。
    
    <img src="images/3.png" width="40%" /><img src="images/4.png" width="15%" /><img src="images/5.png" width="30%" />
 
