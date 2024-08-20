@@ -30,7 +30,6 @@ public class EyeDataSave : MonoBehaviour
     private Vector3 iniAng;
     private Vector3 iniPal;
     private Vector3 nowAng;
-
     private Vector3 nowPal;
 
     // private float nowAngRate;
