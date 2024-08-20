@@ -4,7 +4,9 @@
    
    下载地址：https://developer-express.vive.com/resources/vive-sense/eye-and-facial-tracking-sdk/download/latest/
 
-2. SR_runtime 软件：
+   想要具体了解眼部数据采集的具体细节，可以查看该sdk下的\SDK\02_Unity\Document\Eye处的官方文档
+
+3. SR_runtime 软件：
    
    steam 搜索 VIVE Console for SteamVR，下载该软件。
    安装好软件后，在该软件安装目录下的`\common\VIVEDriver\App\SRanipal` 位置可以找到SR_runtime：
